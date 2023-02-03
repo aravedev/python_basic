@@ -25,3 +25,24 @@ print("white space left...")
 
 for student in students:
     print(f'{student["name"]} your score was {student["grade"]}')
+
+
+## Another example
+
+import random
+names=[
+    {"name":"Juan", "person":"0"},
+    {"name":"Joud", "person":"0"},
+    {"name":"Melania", "person":"0"},
+    {"name":"Danny", "person":"0"}
+    
+    ]
+    
+name_list=["Juan","Joud","Melania","Danny"]
+random.shuffle(name_list)    
+i=0
+
+while(i<len(name_list)):
+    names[i]['person']=name_list[i]
+    print(f'{names[i]["name"]} corresponds {names[i]["person"]}')
+    i=i+1
