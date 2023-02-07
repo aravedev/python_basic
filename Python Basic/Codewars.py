@@ -56,3 +56,50 @@ def get_real_floor(n):
 
 """
 
+
+"""
+You need to write a function that reverses the words in a given string. A word can also fit an empty string. If this is not clear enough, here are some examples:
+
+As the input may have trailing spaces, you will also need to ignore unneccesary whitespace.
+
+Example (Input --> Output)
+
+"Hello World" --> "World Hello"
+"Hi There." --> "There. Hi"
+
+My solution:
+str = 'joihapg  rauflry go'
+
+def reverse(st):
+    st=st.strip().split(" ")
+    arr=[] 
+    for l in reversed(st):
+        if l != '':
+            arr.append(l)
+    
+    return ' '.join(arr)
+    
+
+Forum solution:
+def reverse(st):
+    st = st.split()
+    st.reverse()
+    return ' '.join(st)
+
+something you should know:
+# for x in reversed(st):
+#        arr.append(x)
+
+Reversing using slice
+#st = st[::-1]
+
+Reversing using reverse
+str.reverse()
+
+"""
+
+
+
+
+
+
