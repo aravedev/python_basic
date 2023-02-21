@@ -1,0 +1,6 @@
+
+# Check type, where x : variable
+
+type(x)
+ex: if type(x) == str: 
+    return error
